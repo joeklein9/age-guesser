@@ -14,7 +14,7 @@ fetch (`https://api.agify.io?name=${inputField.value}`)
     .then (response => response.json())
     .then (data => 
         
-        resultsDisplay.innerHTML = data.age
+        resultsDisplay.innerHTML = `Your age is likely: ${data.age}`
         
         
         )
